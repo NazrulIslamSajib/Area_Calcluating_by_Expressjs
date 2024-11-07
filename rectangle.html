@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Area Calculator</title>
+    <style>
+        /* Body styling */
+        body {
+            background-color: #e6f2ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Form container styling */
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Title styling */
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #007bff;
+        }
+
+        /* Form elements styling */
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Submit button hover effect */
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Enter Values</h1>
+        <form action="/rectangle" method="post"> 
+            <div>
+                <label for="length">Length</label>
+                <input type="text" id="length" name="length">
+            </div>
+            <div>
+                <label for="width">Width</label>
+                <input type="text" id="width" name="width">
+            </div>
+            <input type="submit" value="Submit">
+        </form> 
+    </div>
+</body>
+</html>
