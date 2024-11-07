@@ -56,7 +56,7 @@ app.post("/triangle", (req, res) => {
     const side2 = parseFloat(req.body.side2);
     const side3 = parseFloat(req.body.side3);
 
-    //  semi-perimeter
+
     const s = (side1 + side2 + side3) / 2;
     const area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
 
